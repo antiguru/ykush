@@ -63,7 +63,7 @@ int main(int argc, char** argv) {
     
     char cmd = 0x00;
     
-    if(argv[1][0]=='-' && argv[1][1]=='d') {
+    if(argc > 2 && argv[1][0]=='-' && argv[1][1]=='d') {
         switch(argv[2][0]) {
             case '1':
                 // Downstream 1 down
@@ -92,7 +92,7 @@ int main(int argc, char** argv) {
             default:
                 break;
         }
-    } else if(argv[1][0]=='-' && argv[1][1]=='u') {
+    } else if(argc > 2 && argv[1][0]=='-' && argv[1][1]=='u') {
         switch(argv[2][0]) {
             case '1':
                 // Downstream 1 down
